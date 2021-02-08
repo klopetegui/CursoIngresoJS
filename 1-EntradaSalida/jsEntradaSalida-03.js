@@ -1,11 +1,20 @@
-/*
-Debemos lograr tomar un dato por 'ID'
-y luego mostrarlo por 'Alert' al presionar el botón  'mostrar'*/
+/* Nombre : Karen Fernandez Lopetegui 
+Ejercicio 1
+Pedir al usuario los siguientes datos:
+nombreDelAlumno: por  id.value
+edadDelAlumno: por prompt
+Mostrar por alert el mensaje "Ud  se llama ... y tiene ... años"*/
 function mostrar()
 {
-	var nombreIngresado;
-	nombreIngresado=txtIdNombre.value;
-	alert("ok");
+	var nombreDelAlumno;
+	var edadDelAlumno;
+
+	nombreDelAlumno = document.getElementById("txtIdNombre").value;
+
+	edadDelAlumno = prompt("Ingrese su Edad");
+
+	document.write("Usted se llama: " + nombreDelAlumno + " y tiene " + edadDelAlumno + " años ");
+ 
 
 }
 
