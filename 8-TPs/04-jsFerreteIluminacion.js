@@ -33,7 +33,6 @@ function CalcularPrecio ()
 //A)
  	if(cantidad>5)
  	{
- 		alert(cantidad);
  		precioF=sinDesc-(sinDesc*0.5);
  		
  	}	
@@ -43,10 +42,9 @@ function CalcularPrecio ()
  	else
  	if (cantidad==5)
  	{
- 		if (marc=="ArgentinaLuz") {
- 			alert(cantidad);
+ 		if (marc=="ArgentinaLuz") 
+ 		{
  			precioF=sinDesc-(sinDesc*0.4);
-
  		} 
  		else
  		{
@@ -86,11 +84,12 @@ function CalcularPrecio ()
 			}
 		}
 	}
+		porcentaje=precioF*0.1;
+		impuesto= precioF+porcentaje;
 //E)
 	if(precioF>120)	
 	{
-		porcentaje=precioF*0.1;
-		impuesto= precioF+porcentaje;
+		
 
 		alert("IIBB Usted pago"+ impuesto+", siendo " +porcentaje+" el impuesto que se pagó.");
 
